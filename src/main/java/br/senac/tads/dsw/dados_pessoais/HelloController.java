@@ -26,4 +26,13 @@ public class HelloController {
 	public Mensagem hello() {
 		return new Mensagem("Enzo de Oliveira", "Olá, mundo! Meu primeiro endpoint Spring Boot" );
 	}
+
+	/*
+	@GetMapping(value = "/hello-manual", produces = MediaType.APPLICATION_JSON_VALUE)
+	public String helloManual() throws JsonProcessingException {
+		Mensagem mensagem = new Mensagem("Seu Nome Completo", "JSON gerado manualmente com ObjectMapper.");
+		ObjectMapper mapper = new ObjectMapper();
+		return mapper.writeValueAsString(mensagem);
+	}
+	*/
 }
